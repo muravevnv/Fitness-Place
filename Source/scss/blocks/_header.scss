@@ -1,0 +1,119 @@
+.header {
+    background-color: #fff;
+}
+
+.header-top {
+    padding: 16px 0 18px;
+    border-bottom: 2px solid #F0F0F0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-nav  {
+    margin: 0 auto 0 112px;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 1fr;
+    display: grid;
+    grid-gap: 28px;
+    &__item {
+        color: #999999;
+        &._discount {
+            font-weight: 700;
+            color: #000;
+            display: flex;
+            align-items: center;
+            
+            &::before {
+                display: block;
+                content: url('../images/lightning.svg');
+                height: 18px;
+                width: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.header__tel {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    span {
+        display: block;
+        margin-right: 26px;
+        color: #E01F2E;
+    }
+    a {
+        color: #000;
+    }
+}
+
+
+.header-middle {
+    padding: 20px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-search {
+    margin: 0 auto 0 110px;
+    max-width: 770px;
+    width: 100%;
+}
+
+.search__input {
+    width: 100%;
+    padding: 20px 20px; 
+    border: 2px solid #F0F0F0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.header-action {
+    display: grid;
+    grid-gap: 27px;
+    grid-template-columns: repeat(4, auto)
+}
+
+.header-bottom {
+    border-top: 2px solid #F0F0F0;
+    padding: 16px 0;
+    .container {
+        display: flex;
+    }
+}
+
+.header-catalog {
+    width: 100%;
+    &__link {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.header-catalog-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__burger {
+    width: 30px;
+    height: 16px;
+    margin-right: 89px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #E01F2E;
+    }
+}
