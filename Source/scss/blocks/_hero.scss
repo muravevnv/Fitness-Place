@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+    overflow: hidden;
 }
 .hero-slider {
     overflow: hidden;
@@ -92,7 +93,7 @@
     &:hover {
         opacity: .7;
     }
-    @media(max-width: 1200px) {
+    @media(max-width: 1919px) {
         display: none;
     }
 }
@@ -108,8 +109,40 @@
     &:hover {
         opacity: .7;
     }
-    @media(max-width: 1200px) {
+    @media(max-width: 1919px) {
         display: none;
         
+    }
+}
+.slider-pagination {
+    // position: absolute;
+    // z-index: 10;
+    display: flex;
+    // left: 20px !important;
+    // bottom: 30% !important;
+    margin-left: -4px;
+    margin-top: 35px;
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        background-color: #fff;
+        opacity: .35;
+        margin: 0 4px;
+        width: 6px;
+        height: 6px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+        width: 40px;
+        height: 6px;
+        opacity: 1;
+    }
+    @media(max-width: 1439px) {
+       
+    }
+    @media(max-width: 767px) {
+        margin-top: 30px;
+        .swiper-pagination-bullet-active {
+            width: 6px;
+        }
     }
 }
