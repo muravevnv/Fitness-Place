@@ -38,4 +38,25 @@ li {
     }
 }
 
+input {
+    font-family: 'Montserrat';
+}
+input::placeholder {
+    font-family: 'Montserrat';
+    color: $color-text;
+}
+input:focus::placeholder {
+    opacity: 0;
+}
 
+.btn {
+    width: auto;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: $color-primary;
+    height: 57px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: $color-white;
+}

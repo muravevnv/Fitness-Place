@@ -1,0 +1,26 @@
+
+.brands {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.brands-list {
+    padding: 60px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.brands__item {
+    width: auto;
+    img {
+        width: auto;
+        display: block;
+    }
+}
+.brands__more {
+    margin-left: 90px;
+    font-weight: 700;
+    white-space: nowrap;
+}

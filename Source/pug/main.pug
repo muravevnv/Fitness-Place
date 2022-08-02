@@ -4,7 +4,443 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
         link(rel="stylesheet", href="Content/css/main.css")
         title Fitness Place
     body 
         include ../include/header
+        main 
+            section.hero 
+                .hero-slider.js-slider 
+                    .swiper-wrapper 
+                        .hero-slider__item.swiper-slide 
+                            .container 
+                                .hero-slider__info 
+                                    .hero__title Товары для активных и спортивныx
+                                    ul.hero-list 
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Велосипеды
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Тренажеры
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Обувь
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Одежда
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Самокаты
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Велоаксессуары
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Сервис
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Аксессуары
+                        .hero-slider__item.swiper-slide 
+                            .container 
+                                .hero-slider__info 
+                                    .hero__title Какие то еще товары
+                                    ul.hero-list 
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Велосипеды
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Тренажеры
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Обувь
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Одежда
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Самокаты
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Велоаксессуары
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Сервис
+                                        li.hero-list__item 
+                                            a.hero-list__link(href="#") Аксессуары
+                    .slider-next 
+                    .slider-prev        
+            section.brands 
+                .container 
+                    .brands-list.js-brands-slider 
+                        .swiper-wrapper
+                            .brands__item.swiper-slide 
+                                img(src="Content/images/brands/brand-1.svg", alt="HOKA")
+                            .brands__item.swiper-slide 
+                                img(src="Content/images/brands/brand-2.svg", alt="HOKA")
+                            .brands__item.swiper-slide 
+                                img(src="Content/images/brands/brand-3.svg", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-4.svg", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-5.svg", alt="HOKA")
+                            .brands__item.swiper-slide 
+                                img(src="Content/images/brands/brand-6.png", alt="HOKA")
+                            .brands__item.swiper-slide 
+                                img(src="Content/images/brands/brand-7.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                            .brands__item.swiper-slide  
+                                img(src="Content/images/brands/brand-8.png", alt="HOKA")
+                    a(href="#").brands__more Все бренды
+            section.categories 
+                .container 
+                    .section__title Популярные категории
+                    .categories-list 
+                        .categories__item 
+                            .categories__img 
+                                img(src="Content/images/categ-1.png", alt="Велосипеды")
+                            .categories__content 
+                                .categories__title Велосипеды
+                                .categories-links 
+                                    a.categories__link(href="#") Giant
+                                    a.categories__link(href="#") Liv
+                                    a.categories__link(href="#") Dewolf
+                                    a.categories__link(href="#") Globber
+                                    a.categories__link(href="#") Momentum
+                                    a.categories__link(href="#") NOVATRACK
+                                    a.categories__link(href="#") STINGER
+                                    a.categories__link(href="#") FOXX
+                                    a.categories__link(href="#") MIKADO
+                        .categories__item 
+                            .categories__img 
+                                img(src="Content/images/categ-2.png", alt="")
+                            .categories__content 
+                                .categories__title Тренажеры
+                        .categories__item 
+                            .categories__img 
+                                img(src="Content/images/categ-3.png", alt="")
+                            .categories__content 
+                                .categories__title Аксесуары
+                        .categories__item 
+                            .categories__img 
+                                img(src="Content/images/categ-4.png", alt="")
+                            .categories__content 
+                                .categories__title Обувь
+                        .categories__item 
+                            .categories__img 
+                                img(src="Content/images/categ-5.png", alt="")
+                            .categories__content 
+                                .categories__title Сервис
+                        .categories__item 
+                            .categories__img 
+                                img(src="Content/images/categ-6.png", alt="")
+                            .categories__content 
+                                .categories__title Одежда
+                                .categories-links 
+                                    a.categories__link(href="#") Asics
+                                    a.categories__link(href="#") Mizuno
+                                    a.categories__link(href="#") Salomon
+                                    a.categories__link(href="#") Nike
+                                    a.categories__link(href="#") Under Armour
+                                    a.categories__link(href="#") ON
+            section.news 
+                .container 
+                    .news__title Новинки 
+                    .goods-list 
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                        .goods-item 
+                            .goods-item__favorite 
+                                include ../images/favorite.svg
+                            .goods-item__compare 
+                                include ../images/compare.svg
+                            .goods-item__send 
+                                include ../images/send.svg
+                            .goods-item__img
+                                img(src="Content/images/goods-1.png", alt="Товар")
+                            .goods-item__title Велосипед для фитнеса LIV Thrive 2 2021
+                            .goods-item__mortgage От
+                                span 10 443 ₽
+                                | /мес.
+                                //- .tooltip 
+                                //-     .tooltip-box всплывающий текст
+                            .goods-item__price 93 990 ₽
+                            .goods-item__add
+                                include ../images/basket.svg
+                    .goods-more.btn Показать еще
+            section.shops 
+                .container 
+                    .shops__title Наши магазины
+                    .shops-content 
+                        .shops-map 
+                            img(src="Content/images/map.png", alt="Карта")
+                        .shops-main 
+                            img(src="Content/images/banner.png", alt="Баннер").shops-banner
+                            .shops-adress.adress
+                                .adress-item 
+                                    .adress-item__title Москва, Каширское шоссе, дом 19, корпус 1, 
+                                        span ТЦ Каширский Двор
+                                    .adress-item__desc Каждый товар можно протестировать прямо в магазине! Покататься на новом велосипеде GIANT или LIV, позаниматься на любом тренажере перед покупкой. Приезжайте, мы Вас ждем!
+                                    .adress-item__link Как добраться
+                                .adress-item 
+                                    .adress-item__title Москва, Проспект Мира, дом 119, стр . 525, 
+                                        span ТВДНХ 
+                                    .adress-item__desc Каждый товар можно протестировать прямо в магазине! Покататься на новом велосипеде GIANT или LIV, позаниматься на любом тренажере перед покупкой. Приезжайте, мы Вас ждем!
+                                    .adress-item__link Как добраться
+            section.submit
+                .container 
+                    .submit__title Остались вопросы? Готовы оперативно ответить!
+                    .submit-content 
+                        form.submit-form.form(action="#")
+                            
+                                .form-row 
+                                    .col-6
+                                        .form-item 
+                                            input.form__input(type="text" placeholder="Ваше имя") 
+                                    .col-6
+                                        .form-item 
+                                            input.form__input(type="text" placeholder="Ваш e-mail или телефон") 
+                                .form-item 
+                                        textarea.form__textarea(name="", cols="30", rows="10" placeholder="Вопрос или предмет для заявки") 
+                                .form__policy Отправляя заявку, вы соглашаетесь с <a href="#">политикой конфиденциальности </a> и обработкой своих персональных данных
+                                .form__capcha 
+                                    img(src="Content/images/captcha.png", alt="Капча")
+                                button(type="submit").form__btn.btn Отправить
+                        .submit-banner 
+                            img(src="Content/images/banner-2.png", alt="Баннер")
+            section.blog 
+                .container 
+                    .blog__title Блог
+                    .blog-list 
+                        .blog-item
+                            .blog-item__title Как выбрать туристический велосипед
+                        .blog-item
+                            .blog-item__title Двенадцать популярных заблуждений о йоге
+                        .blog-item
+                            .blog-item__title Как выбрать женские кроссовки для бега
+                    .news-list 
+                        .news-item 
+                            img(src="Content/images/news-1.png", alt="Новость").news-item__img
+                            .news-item__title 
+                                span В парках Москвы начал работать прокат спортивного инвентаря.
+                                | Посетители могут взять в аренду велосипеды, электросамокаты, гироскутеры, ролики, скейтборды и многое другое.
+                        .news-item 
+                            img(src="Content/images/news-2.png", alt="Новость").news-item__img
+                            .news-item__title 
+                                span 15 августа 2020 года официальный магазин GIANT в России
+                                |  команда Fitness-Place.RU приняла участие в массовом велопробеге по западу Подмосковья.
+                        .news-item 
+                            img(src="Content/images/news-3.png", alt="Новость").news-item__img
+                            .news-item__title 
+                                span 6 июня 2020 года, в наш магазин специально за покупкой,
+                                |  из Вологды, приехала прекрасная Анастасия. Нам всегда особенно приятно принимать гостей из других городов.
+                        .news-item 
+                            img(src="Content/images/news-4.png", alt="Новость").news-item__img
+                            .news-item__title 
+                                span После 1 мая в парке «Сокольники» будут действовать четыре пункта проката.
+                                |  Один из них расположится на пересечении главной аллеи и проезда Сокольнического Круга.   Источник — kudamoscow.ru, лучшие события Москвы.
+            section.banner 
+                .container 
+                    .banner-img 
+                        picture 
+                            source(srcset="Content/images/banner-red-s.png" media="(max-width: 495px)")
+                            source(srcset="Content/images/banner-red-l.png" media="(max-width: 1200px)")
+                            img(src="Content/images/banner-red.png", alt="Баннер") 
+            section.afisha 
+                .container 
+                    .afisha__title Афиша
+                    .afisha-list.js-afisha-slider 
+                        .swiper-wrapper 
+                            .afisha-item.swiper-slide 
+                                img.afisha-item__img(src="Content/images/afisha-1.png", alt="Афиша")
+                                .afisha-item-info 
+                                    .afisha-item__date 
+                                    .afisha-item__desc 
+                                        p
+                                            span Московский велофестиваль 
+                                        | — это праздник в поддержку развития велосипедной культуры.
+                                        a.afisha-item__link(href="#") Подробнее
+                            .afisha-item.swiper-slide 
+                                img.afisha-item__img(src="Content/images/afisha-1.png", alt="Афиша")
+                                .afisha-item-info 
+                                    .afisha-item__date 
+                                    .afisha-item__desc 
+                                        p
+                                            span Московский велофестиваль 
+                                        | — это праздник в поддержку развития велосипедной культуры.
+                                        a.afisha-item__link(href="#") Подробнее
+                            .afisha-item.swiper-slide 
+                                img.afisha-item__img(src="Content/images/afisha-1.png", alt="Афиша")
+                                .afisha-item-info 
+                                    .afisha-item__date 
+                                    .afisha-item__desc 
+                                        p
+                                            span Московский велофестиваль 
+                                        | — это праздник в поддержку развития велосипедной культуры.
+                                        a.afisha-item__link(href="#") Подробнее
+                            .afisha-item.swiper-slide 
+                                img.afisha-item__img(src="Content/images/afisha-1.png", alt="Афиша")
+                                .afisha-item-info 
+                                    .afisha-item__date 
+                                    .afisha-item__desc 
+                                        p
+                                            span Московский велофестиваль 
+                                        | — это праздник в поддержку развития велосипедной культуры.
+                                        a.afisha-item__link(href="#") Подробнее
+                            .afisha-item.swiper-slide 
+                                img.afisha-item__img(src="Content/images/afisha-1.png", alt="Афиша")
+                                .afisha-item-info 
+                                    .afisha-item__date 
+                                    .afisha-item__desc 
+                                        p
+                                            span Московский велофестиваль 
+                                        | — это праздник в поддержку развития велосипедной культуры.
+                                        a.afisha-item__link(href="#") Подробнее
+                            .afisha-item.swiper-slide 
+                                img.afisha-item__img(src="Content/images/afisha-1.png", alt="Афиша")
+                                .afisha-item-info 
+                                    .afisha-item__date 
+                                    .afisha-item__desc 
+                                        p
+                                            span Московский велофестиваль 
+                                        | — это праздник в поддержку развития велосипедной культуры.
+                                        a.afisha-item__link(href="#") Подробнее
+
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js") 
+        script(src="Content/scripts/main.js") 

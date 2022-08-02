@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="Content/css/main.css">
     <title>Fitness Place</title>
   </head>
@@ -11,7 +12,12 @@
     <header class="header"> 
       <div class="header-top"> 
         <div class="container"> 
-          <div class="header__location">Санкт-Петербург</div>
+          <div class="header__location">
+             <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 0C4.022 0.037113 0 4.09146 0 9.09069C0 11.5271 1.036 13.8843 2.559 15.5373L9.002 22L15.421 15.5594C16.956 13.9064 18 11.5401 18 9.09069C17.999 4.09246 13.977 0.037113 9 0ZM13.98 14.1692L9.002 19.1634L4.003 14.1491C2.748 12.7719 2 10.8841 2 9.09069C2 5.21789 5.139 2.04322 9 2.00711C12.86 2.04322 15.999 5.21889 16 9.09069C16 10.8972 15.245 12.793 13.98 14.1692Z" fill="#D6D6D6"/>
+<path d="M9.00059 4.94922C6.75459 4.94922 4.93359 6.77578 4.93359 9.02864C4.93359 11.2815 6.75459 13.1081 9.00059 13.1081C11.2466 13.1081 13.0676 11.2815 13.0676 9.02864C13.0676 6.77478 11.2466 4.94922 9.00059 4.94922ZM9.00059 11.101C7.86059 11.101 6.93359 10.1711 6.93359 9.02764C6.93359 7.88416 7.86059 6.95432 9.00059 6.95432C10.1406 6.95432 11.0676 7.88416 11.0676 9.02764C11.0676 10.1711 10.1406 11.101 9.00059 11.101Z" fill="#D6D6D6"/>
+</svg>Санкт-Петербург
+          </div>
           <nav class="header-nav"> <a class="header-nav__item _discount" href="#"> Акции и скидки</a><a class="header-nav__item" href="#"> Оплата и доставка</a><a class="header-nav__item" href="#"> Советы по подбору</a><a class="header-nav__item" href="#"> Бренды</a><a class="header-nav__item" href="#"> Контакты</a><a class="header-nav__item" href="#">О компании </a></nav>
           <div class="header__tel"> <span>Обратный звонок</span><a href="tel:+7 (495) 730-46-36">+7 (495) 730-46-36</a></div>
         </div>
@@ -19,34 +25,564 @@
       <div class="header-middle"> 
         <div class="container"> <a class="header__logo" href="#"><img src="Content/images/logo.svg" alt="Fitness Place"></a>
           <div class="header-search search">
-            <input class="search__input" type="text">
-            <div class="search__ico"></div>
+            <input class="search__input" type="text" placeholder="Поиск по товарам">
+            <div class="search__ico"><svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33333 16.5016C4.28325 16.5016 1 13.2184 1 9.16829C1 5.11821 4.28325 1.83496 8.33333 1.83496C12.3834 1.83496 15.6667 5.11821 15.6667 9.16829C15.6667 13.2184 12.3834 16.5016 8.33333 16.5016Z" stroke="#E01F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.8359 14.6689C16.892 18.3337 18.42 20.1661 18.42 20.1661" stroke="#E01F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
           </div>
           <div class="header-action"> 
-            <div class="header-action__item">Сравнение</div>
-            <div class="header-action__item">Избранное</div>
-            <div class="header-action__item">Кабинет</div>
-            <div class="header-action__item">Корзина</div>
+            <div class="header-action__item _search">
+              <div class="header-action__img">
+                 <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33333 16.5016C4.28325 16.5016 1 13.2184 1 9.16829C1 5.11821 4.28325 1.83496 8.33333 1.83496C12.3834 1.83496 15.6667 5.11821 15.6667 9.16829C15.6667 13.2184 12.3834 16.5016 8.33333 16.5016Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.8359 14.6689C16.892 18.3337 18.42 20.1661 18.42 20.1661" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </div></svg><span>Поиск</span>
+            </div>
+            <div class="header-action__item _compare">
+              <div class="header-action__img">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+              </div><span>Сравнение</span>
+            </div>
+            <div class="header-action__item _favorite">
+              <div class="header-action__img"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+              </div><span>Избранное</span>
+            </div>
+            <div class="header-action__item"> 
+              <div class="header-action__img">
+                 <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.1818 20.9997V18.7775C19.1818 17.5987 18.7029 16.4683 17.8505 15.6348C16.998 14.8013 15.8419 14.333 14.6364 14.333H5.54545C4.33992 14.333 3.18377 14.8013 2.33133 15.6348C1.47889 16.4683 1 17.5987 1 18.7775V20.9997" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.0923 9.88889C12.6027 9.88889 14.6378 7.89904 14.6378 5.44444C14.6378 2.98985 12.6027 1 10.0923 1C7.58194 1 5.54688 2.98985 5.54688 5.44444C5.54688 7.89904 7.58194 9.88889 10.0923 9.88889Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div><span>Кабинет</span>
+            </div>
+            <div class="header-action__item"> 
+              <div class="header-action__img">
+                 <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+              </div><span>Корзина</span>
+            </div>
           </div>
         </div>
       </div>
       <div class="header-bottom"> 
         <div class="container"> 
-          <div class="header__burger"> <span></span><span></span><span></span></div>
-          <nav class="header-catalog"> 
-            <ul class="header-catalog-list"> 
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">Велоспорт</a></li>
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">тренажеры</a></li>
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">Фитнес-аксессуары</a></li>
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">Обувь</a></li>
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">Одежда</a></li>
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">Летний отдых</a></li>
-              <li class="header-catalog__item _discount"><a class="header-catalog__link" href="#">рапродажа</a></li>
-              <li class="header-catalog__item"> <a class="header-catalog__link" href="#">вднх</a></li>
-            </ul>
-          </nav>
+          <div class="header__burger"> <span></span><span></span><span></span></div><a class="header-place" href="">вднх</a>
         </div>
       </div>
     </header>
+    <main> 
+      <section class="hero"> 
+        <div class="hero-slider js-slider"> 
+          <div class="swiper-wrapper"> 
+            <div class="hero-slider__item swiper-slide"> 
+              <div class="container"> 
+                <div class="hero-slider__info"> 
+                  <div class="hero__title">Товары для активных и спортивныx</div>
+                  <ul class="hero-list"> 
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Велосипеды</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Тренажеры</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Обувь</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Одежда</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Самокаты</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Велоаксессуары</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Сервис</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Аксессуары</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slider__item swiper-slide"> 
+              <div class="container"> 
+                <div class="hero-slider__info"> 
+                  <div class="hero__title">Какие то еще товары</div>
+                  <ul class="hero-list"> 
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Велосипеды</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Тренажеры</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Обувь</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Одежда</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Самокаты</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Велоаксессуары</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Сервис</a></li>
+                    <li class="hero-list__item"> <a class="hero-list__link" href="#">Аксессуары</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-next"> </div>
+          <div class="slider-prev">       </div>
+        </div>
+      </section>
+      <section class="brands"> 
+        <div class="container"> 
+          <div class="brands-list js-brands-slider"> 
+            <div class="swiper-wrapper">
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-1.svg" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-2.svg" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-3.svg" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-4.svg" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-5.svg" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-6.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-7.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+              <div class="brands__item swiper-slide"> <img src="Content/images/brands/brand-8.png" alt="HOKA"></div>
+            </div>
+          </div><a class="brands__more" href="#">Все бренды</a>
+        </div>
+      </section>
+      <section class="categories"> 
+        <div class="container"> 
+          <div class="section__title">Популярные категории</div>
+          <div class="categories-list"> 
+            <div class="categories__item"> 
+              <div class="categories__img"> <img src="Content/images/categ-1.png" alt="Велосипеды"></div>
+              <div class="categories__content"> 
+                <div class="categories__title">Велосипеды</div>
+                <div class="categories-links"> <a class="categories__link" href="#">Giant</a><a class="categories__link" href="#">Liv</a><a class="categories__link" href="#">Dewolf</a><a class="categories__link" href="#">Globber</a><a class="categories__link" href="#">Momentum</a><a class="categories__link" href="#">NOVATRACK</a><a class="categories__link" href="#">STINGER</a><a class="categories__link" href="#">FOXX</a><a class="categories__link" href="#">MIKADO</a></div>
+              </div>
+            </div>
+            <div class="categories__item"> 
+              <div class="categories__img"> <img src="Content/images/categ-2.png" alt=""></div>
+              <div class="categories__content"> 
+                <div class="categories__title">Тренажеры</div>
+              </div>
+            </div>
+            <div class="categories__item"> 
+              <div class="categories__img"> <img src="Content/images/categ-3.png" alt=""></div>
+              <div class="categories__content"> 
+                <div class="categories__title">Аксесуары</div>
+              </div>
+            </div>
+            <div class="categories__item"> 
+              <div class="categories__img"> <img src="Content/images/categ-4.png" alt=""></div>
+              <div class="categories__content"> 
+                <div class="categories__title">Обувь</div>
+              </div>
+            </div>
+            <div class="categories__item"> 
+              <div class="categories__img"> <img src="Content/images/categ-5.png" alt=""></div>
+              <div class="categories__content"> 
+                <div class="categories__title">Сервис</div>
+              </div>
+            </div>
+            <div class="categories__item"> 
+              <div class="categories__img"> <img src="Content/images/categ-6.png" alt=""></div>
+              <div class="categories__content"> 
+                <div class="categories__title">Одежда</div>
+                <div class="categories-links"> <a class="categories__link" href="#">Asics</a><a class="categories__link" href="#">Mizuno</a><a class="categories__link" href="#">Salomon</a><a class="categories__link" href="#">Nike</a><a class="categories__link" href="#">Under Armour</a><a class="categories__link" href="#">ON</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news"> 
+        <div class="container"> 
+          <div class="news__title">Новинки </div>
+          <div class="goods-list"> 
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+            <div class="goods-item"> 
+              <div class="goods-item__favorite">
+                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__compare">
+                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+</svg>
+
+              </div>
+              <div class="goods-item__send">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.7948 0.189749C20.3648 1.61036 5.65756 7.70229 1.59394 9.36264C-1.1313 10.4261 0.464091 11.4233 0.464091 11.4233C0.464091 11.4233 2.79042 12.2209 4.78473 12.8191C6.77876 13.4173 7.84227 12.7527 7.84227 12.7527L17.2145 6.43808C20.538 4.1781 19.7404 6.03916 18.9426 6.83699C17.2145 8.56536 14.3563 11.2903 11.9633 13.484C10.8998 14.4145 11.4314 15.212 11.897 15.611C13.625 17.0734 18.3446 20.0646 18.6103 20.2639C20.0144 21.258 22.7765 22.6889 23.1966 19.6657L24.8583 9.22995C25.3902 5.70714 25.9218 2.45001 25.9882 1.51948C26.1878 -0.740782 23.7948 0.189749 23.7948 0.189749Z" fill="#D6D6D6"/>
+</svg>
+
+              </div>
+              <div class="goods-item__img"><img src="Content/images/goods-1.png" alt="Товар"></div>
+              <div class="goods-item__title">Велосипед для фитнеса LIV Thrive 2 2021</div>
+              <div class="goods-item__mortgage">От<span>10 443 ₽</span>/мес.</div>
+              <div class="goods-item__price">93 990 ₽</div>
+              <div class="goods-item__add"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+</svg>
+
+              </div>
+            </div>
+          </div>
+          <div class="goods-more btn">Показать еще</div>
+        </div>
+      </section>
+      <section class="shops"> 
+        <div class="container"> 
+          <div class="shops__title">Наши магазины</div>
+          <div class="shops-content"> 
+            <div class="shops-map"> <img src="Content/images/map.png" alt="Карта"></div>
+            <div class="shops-main"> <img class="shops-banner" src="Content/images/banner.png" alt="Баннер">
+              <div class="shops-adress adress">
+                <div class="adress-item"> 
+                  <div class="adress-item__title">Москва, Каширское шоссе, дом 19, корпус 1, <span>ТЦ Каширский Двор</span></div>
+                  <div class="adress-item__desc">Каждый товар можно протестировать прямо в магазине! Покататься на новом велосипеде GIANT или LIV, позаниматься на любом тренажере перед покупкой. Приезжайте, мы Вас ждем!</div>
+                  <div class="adress-item__link">Как добраться</div>
+                </div>
+                <div class="adress-item"> 
+                  <div class="adress-item__title">Москва, Проспект Мира, дом 119, стр . 525, <span>ТВДНХ </span></div>
+                  <div class="adress-item__desc">Каждый товар можно протестировать прямо в магазине! Покататься на новом велосипеде GIANT или LIV, позаниматься на любом тренажере перед покупкой. Приезжайте, мы Вас ждем!</div>
+                  <div class="adress-item__link">Как добраться</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="submit">
+        <div class="container"> 
+          <div class="submit__title">Остались вопросы? Готовы оперативно ответить!</div>
+          <div class="submit-content"> 
+            <form class="submit-form form" action="#">
+              <div class="form-row"> 
+                <div class="col-6">
+                  <div class="form-item"> 
+                    <input class="form__input" type="text" placeholder="Ваше имя">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-item"> 
+                    <input class="form__input" type="text" placeholder="Ваш e-mail или телефон">
+                  </div>
+                </div>
+              </div>
+              <div class="form-item"> 
+                <textarea class="form__textarea" name="" cols="30" rows="10" placeholder="Вопрос или предмет для заявки"> </textarea>
+              </div>
+              <div class="form__policy">Отправляя заявку, вы соглашаетесь с <a href="#">политикой конфиденциальности </a> и обработкой своих персональных данных</div>
+              <div class="form__capcha"> <img src="Content/images/captcha.png" alt="Капча"></div>
+              <button class="form__btn btn" type="submit">Отправить</button>
+            </form>
+            <div class="submit-banner"> <img src="Content/images/banner-2.png" alt="Баннер"></div>
+          </div>
+        </div>
+      </section>
+      <section class="blog"> 
+        <div class="container"> 
+          <div class="blog__title">Блог</div>
+          <div class="blog-list"> 
+            <div class="blog-item">
+              <div class="blog-item__title">Как выбрать туристический велосипед</div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item__title">Двенадцать популярных заблуждений о йоге</div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item__title">Как выбрать женские кроссовки для бега</div>
+            </div>
+          </div>
+          <div class="news-list"> 
+            <div class="news-item"> <img class="news-item__img" src="Content/images/news-1.png" alt="Новость">
+              <div class="news-item__title"> <span>В парках Москвы начал работать прокат спортивного инвентаря.</span>Посетители могут взять в аренду велосипеды, электросамокаты, гироскутеры, ролики, скейтборды и многое другое.</div>
+            </div>
+            <div class="news-item"> <img class="news-item__img" src="Content/images/news-2.png" alt="Новость">
+              <div class="news-item__title"> <span>15 августа 2020 года официальный магазин GIANT в России</span> команда Fitness-Place.RU приняла участие в массовом велопробеге по западу Подмосковья.</div>
+            </div>
+            <div class="news-item"> <img class="news-item__img" src="Content/images/news-3.png" alt="Новость">
+              <div class="news-item__title"> <span>6 июня 2020 года, в наш магазин специально за покупкой,</span> из Вологды, приехала прекрасная Анастасия. Нам всегда особенно приятно принимать гостей из других городов.</div>
+            </div>
+            <div class="news-item"> <img class="news-item__img" src="Content/images/news-4.png" alt="Новость">
+              <div class="news-item__title"> <span>После 1 мая в парке «Сокольники» будут действовать четыре пункта проката.</span> Один из них расположится на пересечении главной аллеи и проезда Сокольнического Круга.   Источник — kudamoscow.ru, лучшие события Москвы.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner"> 
+        <div class="container"> 
+          <div class="banner-img"> 
+            <picture> 
+              <source srcset="Content/images/banner-red-s.png" media="(max-width: 495px)">
+              <source srcset="Content/images/banner-red-l.png" media="(max-width: 1200px)"><img src="Content/images/banner-red.png" alt="Баннер">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="afisha"> 
+        <div class="container"> 
+          <div class="afisha__title">Афиша</div>
+          <div class="afisha-list js-afisha-slider"> 
+            <div class="swiper-wrapper"> 
+              <div class="afisha-item swiper-slide"> <img class="afisha-item__img" src="Content/images/afisha-1.png" alt="Афиша">
+                <div class="afisha-item-info"> 
+                  <div class="afisha-item__date"> </div>
+                  <div class="afisha-item__desc"> 
+                    <p><span>Московский велофестиваль </span></p>— это праздник в поддержку развития велосипедной культуры.<a class="afisha-item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="afisha-item swiper-slide"> <img class="afisha-item__img" src="Content/images/afisha-1.png" alt="Афиша">
+                <div class="afisha-item-info"> 
+                  <div class="afisha-item__date"> </div>
+                  <div class="afisha-item__desc"> 
+                    <p><span>Московский велофестиваль </span></p>— это праздник в поддержку развития велосипедной культуры.<a class="afisha-item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="afisha-item swiper-slide"> <img class="afisha-item__img" src="Content/images/afisha-1.png" alt="Афиша">
+                <div class="afisha-item-info"> 
+                  <div class="afisha-item__date"> </div>
+                  <div class="afisha-item__desc"> 
+                    <p><span>Московский велофестиваль </span></p>— это праздник в поддержку развития велосипедной культуры.<a class="afisha-item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="afisha-item swiper-slide"> <img class="afisha-item__img" src="Content/images/afisha-1.png" alt="Афиша">
+                <div class="afisha-item-info"> 
+                  <div class="afisha-item__date"> </div>
+                  <div class="afisha-item__desc"> 
+                    <p><span>Московский велофестиваль </span></p>— это праздник в поддержку развития велосипедной культуры.<a class="afisha-item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="afisha-item swiper-slide"> <img class="afisha-item__img" src="Content/images/afisha-1.png" alt="Афиша">
+                <div class="afisha-item-info"> 
+                  <div class="afisha-item__date"> </div>
+                  <div class="afisha-item__desc"> 
+                    <p><span>Московский велофестиваль </span></p>— это праздник в поддержку развития велосипедной культуры.<a class="afisha-item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="afisha-item swiper-slide"> <img class="afisha-item__img" src="Content/images/afisha-1.png" alt="Афиша">
+                <div class="afisha-item-info"> 
+                  <div class="afisha-item__date"> </div>
+                  <div class="afisha-item__desc"> 
+                    <p><span>Московский велофестиваль </span></p>— это праздник в поддержку развития велосипедной культуры.<a class="afisha-item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="Content/scripts/main.js"> </script>
   </body>
 </html>

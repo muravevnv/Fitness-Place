@@ -2,7 +2,12 @@ header.header
     
         .header-top 
             .container 
-                .header__location Санкт-Петербург
+                .header__location 
+                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0C4.022 0.037113 0 4.09146 0 9.09069C0 11.5271 1.036 13.8843 2.559 15.5373L9.002 22L15.421 15.5594C16.956 13.9064 18 11.5401 18 9.09069C17.999 4.09246 13.977 0.037113 9 0ZM13.98 14.1692L9.002 19.1634L4.003 14.1491C2.748 12.7719 2 10.8841 2 9.09069C2 5.21789 5.139 2.04322 9 2.00711C12.86 2.04322 15.999 5.21889 16 9.09069C16 10.8972 15.245 12.793 13.98 14.1692Z" fill="#D6D6D6"/>
+                        <path d="M9.00059 4.94922C6.75459 4.94922 4.93359 6.77578 4.93359 9.02864C4.93359 11.2815 6.75459 13.1081 9.00059 13.1081C11.2466 13.1081 13.0676 11.2815 13.0676 9.02864C13.0676 6.77478 11.2466 4.94922 9.00059 4.94922ZM9.00059 11.101C7.86059 11.101 6.93359 10.1711 6.93359 9.02764C6.93359 7.88416 7.86059 6.95432 9.00059 6.95432C10.1406 6.95432 11.0676 7.88416 11.0676 9.02764C11.0676 10.1711 10.1406 11.101 9.00059 11.101Z" fill="#D6D6D6"/>
+                    </svg>
+                    | Санкт-Петербург
                 nav.header-nav 
                     a.header-nav__item._discount(href="#")  Акции и скидки
                     a.header-nav__item(href="#")  Оплата и доставка
@@ -18,34 +23,69 @@ header.header
                 a.header__logo(href="#")
                     img(src="Content/images/logo.svg", alt="Fitness Place") 
                 .header-search.search
-                    input.search__input(type="text")
+                    input.search__input(type="text" placeholder="Поиск по товарам")
                     .search__ico
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33333 16.5016C4.28325 16.5016 1 13.2184 1 9.16829C1 5.11821 4.28325 1.83496 8.33333 1.83496C12.3834 1.83496 15.6667 5.11821 15.6667 9.16829C15.6667 13.2184 12.3834 16.5016 8.33333 16.5016Z" stroke="#E01F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.8359 14.6689C16.892 18.3337 18.42 20.1661 18.42 20.1661" stroke="#E01F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                 .header-action 
-                    .header-action__item Сравнение
-                    .header-action__item Избранное
-                    .header-action__item Кабинет
-                    .header-action__item Корзина
+                    .header-action__item._search
+                        .header-action__img 
+                           <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33333 16.5016C4.28325 16.5016 1 13.2184 1 9.16829C1 5.11821 4.28325 1.83496 8.33333 1.83496C12.3834 1.83496 15.6667 5.11821 15.6667 9.16829C15.6667 13.2184 12.3834 16.5016 8.33333 16.5016Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.8359 14.6689C16.892 18.3337 18.42 20.1661 18.42 20.1661" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        span Поиск
+                    .header-action__item._compare
+                        .header-action__img 
+                            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.7 3H15.9C15.5 1 13.9 0 12 0C10.1 0 8.6 1 8.1 3H4.3L1.1 11H3.3L5 6.7L7.5 13H0V14C0 16.8 2.2 19 5 19C7.8 19 10 16.8 10 14V13.8L6.5 5H8.2C8.6 7 10.2 8 12.1 8C14 8 15.5 7 16 5H17.5L15 11H17.2L19 6.5L21.6 13H14V14C14 16.8 16.2 19 19 19C21.8 19 24 16.8 24 14V13.8L19.7 3ZM5 17C3.7 17 2.6 16 2.2 15H7.9C7.4 16 6.3 17 5 17ZM12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM19 17C17.7 17 16.6 16 16.2 15H21.9C21.4 16 20.3 17 19 17Z" fill="#999999"/>
+                            </svg>
+                        span Сравнение
+                    .header-action__item._favorite
+                        .header-action__img
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9724 1.4631C8.29758 -0.305846 4.65341 -0.454151 2.19287 1.77598C-0.627725 4.33336 -0.742425 8.62013 1.93637 11.3129L10.2459 19.6724C10.6827 20.1109 11.4155 20.1089 11.8497 19.6682C14.3851 17.0809 17.9468 13.5375 20.0187 11.3788C22.689 8.6777 22.685 4.28348 19.8553 1.73472C17.3523 -0.655521 13.9244 -0.410376 10.9724 1.4631ZM18.34 3.26838C20.3019 5.03545 20.3917 7.95197 18.5404 9.82463C16.061 12.3619 13.5498 14.9008 11.0435 17.4143L3.53577 9.86171C1.6786 7.99485 1.757 5.07643 3.71253 3.30341C5.51006 1.67419 8.34851 1.85884 10.2848 3.49896C10.7052 3.85414 11.3378 3.85144 11.7548 3.49266C13.9464 1.85484 16.1743 1.37438 18.34 3.26838Z" fill="#999999"/>
+                            </svg>
+                        span Избранное
+                    .header-action__item 
+                        .header-action__img 
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.1818 20.9997V18.7775C19.1818 17.5987 18.7029 16.4683 17.8505 15.6348C16.998 14.8013 15.8419 14.333 14.6364 14.333H5.54545C4.33992 14.333 3.18377 14.8013 2.33133 15.6348C1.47889 16.4683 1 17.5987 1 18.7775V20.9997" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.0923 9.88889C12.6027 9.88889 14.6378 7.89904 14.6378 5.44444C14.6378 2.98985 12.6027 1 10.0923 1C7.58194 1 5.54688 2.98985 5.54688 5.44444C5.54688 7.89904 7.58194 9.88889 10.0923 9.88889Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        span Кабинет
+                    .header-action__item  
+                        .header-action__img 
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.10699 2.31579L5.49398 0H1.15663C0.84987 0 0.555678 0.121992 0.338768 0.339139C0.121859 0.556287 0 0.850802 0 1.15789C0 1.46499 0.121859 1.7595 0.338768 1.97665C0.555678 2.1938 0.84987 2.31579 1.15663 2.31579H3.72434L7.46024 17.3684H22.8434V15.0526H9.26458L8.88289 13.5011L24 10.6179V2.31579H6.10699ZM21.6867 8.70737L8.32771 11.2432L6.6506 4.63158H21.6867V8.70737ZM7.80723 18.5263C7.46409 18.5263 7.12866 18.6282 6.84335 18.819C6.55804 19.0099 6.33567 19.2811 6.20435 19.5985C6.07304 19.9159 6.03868 20.2651 6.10563 20.602C6.17257 20.9389 6.33781 21.2484 6.58044 21.4913C6.82308 21.7342 7.13221 21.8996 7.46876 21.9666C7.8053 22.0336 8.15414 21.9992 8.47116 21.8678C8.78818 21.7363 9.05914 21.5137 9.24978 21.2281C9.44042 20.9425 9.54217 20.6067 9.54217 20.2632C9.54217 19.8025 9.35938 19.3607 9.03402 19.035C8.70865 18.7093 8.26736 18.5263 7.80723 18.5263ZM21.6867 18.5263C21.3436 18.5263 21.0082 18.6282 20.7229 18.819C20.4376 19.0099 20.2152 19.2811 20.0839 19.5985C19.9526 19.9159 19.9182 20.2651 19.9851 20.602C20.0521 20.9389 20.2173 21.2484 20.46 21.4913C20.7026 21.7342 21.0117 21.8996 21.3483 21.9666C21.6848 22.0336 22.0337 21.9992 22.3507 21.8678C22.6677 21.7363 22.9387 21.5137 23.1293 21.2281C23.3199 20.9425 23.4217 20.6067 23.4217 20.2632C23.4217 19.8025 23.2389 19.3607 22.9135 19.035C22.5882 18.7093 22.1469 18.5263 21.6867 18.5263Z" fill="#999999"/>
+                            </svg>
+
+                        span Корзина
         .header-bottom 
             .container 
                 .header__burger 
                     span
                     span
                     span
-                nav.header-catalog 
-                    ul.header-catalog-list 
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link Велоспорт
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link тренажеры
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link Фитнес-аксессуары
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link Обувь
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link Одежда
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link Летний отдых
-                        li.header-catalog__item._discount
-                            a(href="#").header-catalog__link рапродажа
-                        li.header-catalog__item 
-                            a(href="#").header-catalog__link вднх
+                //- nav.header-catalog 
+                //-     ul.header-catalog-list 
+                //-         li.header-catalog__item 
+                //-             a(href="#").header-catalog__link Велоспорт
+                //-         li.header-catalog__item 
+                //-             a(href="#").header-catalog__link тренажеры
+                //-         li.header-catalog__item 
+                //-             a(href="#").header-catalog__link Фитнес-аксессуары
+                //-         li.header-catalog__item 
+                //-             a(href="#").header-catalog__link Обувь
+                //-     .header-catalog__more 
+                //-         span Еще
+                //-         ul.header-catalog__sublist
+                //-             li.header-catalog__item 
+                //-                 a(href="#").header-catalog__link Одежда
+                //-             li.header-catalog__item 
+                //-                 a(href="#").header-catalog__link Летний отдых
+                //-             li.header-catalog__item._discount
+                //-                 a(href="#").header-catalog__link рапродажа
+                a(href="").header-place вднх

@@ -5,14 +5,14 @@ const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 const concat = require("gulp-concat");
 const gulp = require("gulp");
-const postcss = require("gulp-postcss");
+
 const pug = require('gulp-pug');
 const source = require('vinyl-source-stream');
 const rename = require('gulp-rename');
 const rigger = require("gulp-rigger");
-let sass = require("gulp-sass");
-sass.compiler = require("node-sass");
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require("gulp-sourcemaps");
+const postcss = require("gulp-postcss");
 const sortMediaQueries = require("postcss-sort-media-queries");
 const svgSprite = require("gulp-svg-sprite");
 //const mqpacker = require("css-mqpacker");
